@@ -275,12 +275,14 @@ a{
 
 
 .content img{
-    width: 90px;
-    height: 90px;
+    width: 140px;
+    height: 140px;
     border-radius:100px;
     overflow: hidden;
     object-fit: cover;
     object-position: top;
+}
+.content img:hover{ transform: scale(2); -webkit-transform: scale(2); -moz-transform: scale(2); -ms-transform: scale(2); -o-transform: scale(2);
 }
 .content{
     display: flex;
