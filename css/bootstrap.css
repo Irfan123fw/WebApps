@@ -165,6 +165,7 @@ ol ul,
 ul ol {
   margin-bottom: 0;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 *{
@@ -173,16 +174,7 @@ ul ol {
     margin: 0;
 }
 
-/* body{
-    width: 100%;
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #b8dae3;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-} */
+
 a{
     text-decoration: none;
 }
@@ -221,7 +213,7 @@ a{
 
 
 .box{
-    position: fixed;
+    position: relative;
     min-width: 250px;
     background-color: #fff;
     box-shadow: 2px 3px 30px rgba(0,0,0,0.05);
@@ -283,21 +275,13 @@ a{
 
 
 .content img{
-    width: 140px;
-    height: 140px;
-    border-radius:200px;
+    width: 90px;
+    height: 90px;
+    border-radius:100px;
     overflow: hidden;
     object-fit: cover;
     object-position: top;
-    -webkit-border-radius:200px;
-    -moz-border-radius:200px;
-    -ms-border-radius:200px;
-    -o-border-radius:200px;
 }
-
-.content img:hover{ transform: scale(2); -webkit-transform: scale(2); -moz-transform: scale(2); -ms-transform: scale(2); -o-transform: scale(2);
-}
-
 .content{
     display: flex;
     flex-direction: column;
@@ -318,6 +302,34 @@ a{
 .content p:hover{
     text-decoration: underline;
 }
+
+.btn{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.btn a i{
+    margin-right: 9px;
+}
+.btn a{
+    border-radius: 18px;
+    color: #8b8b8b;
+    padding: 8px 17px;
+    font-size: 0.9rem;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+}
+.btn a:hover{
+    color: #fff;
+    box-shadow: 2px 5px 15px rgba(80,123,252,0.05);
+    background-color: #507bfc;
+    transition: all ease 0.5s;
+}
+
 dt {
   font-weight: 700;
 }
